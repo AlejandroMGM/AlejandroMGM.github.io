@@ -1,11 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body style="background-color: aquamarine;">
-    !Hola MUNDO!
-</body>
+<html language="sp-mx">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Juego del Gato
+        </title>
+        <script language="javascript">
+            var vTurno="O";
+            var pos=[9,3,3,3,3,3,3,3,3,3];
+
+            function fganar(v1,v2,v3)
+            {
+                if(pos[v1]==pos[v2] && pos[v1]==pos[v3] && pos[v1]!=3 && pos[v1]!=9)
+                {
+                    if(pos[v1]==1)
+                    {
+                        alert ("Ganaron las X'S");
+                    }
+                    else
+                    {
+                        alert ("Ganaron las O'S");
+                    }
+                    for(var T=1;T<=9;T++)
+                    {
+                        pos[T]=9;
+                    }
+                }
+            }
+
+            function fcomparacion(numboy)
+            {
+                switch(numboy)
+                {
+                    case 1: fganar(1,2,3);
+                            fganar(1,5,9);
+                            fganar(1,4,7);
+                            break;
+                    case 2: fganar(2,1,3);
+                            fganar(2,5,8);
+                            break;
+                    case 3: fganar(3,1,2);
+                            fganar(3,6,9);
+                            fganar(3,5,7);
+                            break;
+                    case 4: fganar(4,1,7);
+                            fganar(4,5,6);
+                            break;
+                    case 5: fganar(5,1,9);
+                            fganar(5,2,8);
+                            fganar(5,4,6);
+                            fganar(5,3,7);
+                            break;
+                    case 6: fganar(6,3,9);
+                            fganar(6,4,5);
+                            break;
+                    case 7: fganar(7,1,4);
+                            fganar(7,5,3);
+                            fganar(7,8,9);
+                            break;
+                    case 8: fganar(8,2,5);
+                            fganar(8,7,9);
+                            break;
+                    case 9: fganar(9,3,6);
+                            fganar(9,1,5);
+                            fganar(9,8,7);
+                            break;          
+                }
+            }
+
+            function fcambiarTurno(num)
+            {
+                if(pos[num]==3)
+                {
+                    if(vTurno=="O")
+                    {
+                        document.getElementById('b' + num).value="O";
+                        pos[num]=0;
+                        vTurno="X"
+                    }
+                    else
+                    {
+                        document.getElementById('b' + num).value="X";
+                        pos[num]=1;
+                        vTurno="O"
+                    }
+
+                    fcomparacion(num);
+                }
+            }
+            function fResablecer()
+            {
+                for(var M=1; M<=9; M++)
+                {
+                    pos[M]=3;
+                    document.getElementById('b'+M).value=" ";
+                }
+            }
+        </script>
+        <style>
+            body {
+              background-image: url('fodo.jpg'); 
+              background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+              
+            }
+          </style>
+    </head>
+    <body>
+        <center>
+            <br>
+            <font color="white">Juego del gato</font><br><br>
+            <input type="button" id="b1" value=" "
+                    style="width: 50px; height: 50px;
+                    font-size: 30px;border: 1px solid gold;
+                    background-color: black; color: aqua;" 
+                    onclick="fcambiarTurno(1)"/>
+            <input type="button" id="b2" value=" "
+                    style="width: 50px; height: 50px;
+                    font-size: 30px;border: 1px solid gold;
+                    background-color: black; color: aqua;"
+                    onclick="fcambiarTurno(2)"/>
+            <input type="button" id="b3" value=" "
+                    style="width: 50px; height: 50px;
+                    font-size: 30px;border: 1px solid gold;
+                    background-color: black; color: aqua;"
+                    onclick="fcambiarTurno(3)"/>
+            <br>
+
+            <input type="button" id="b4" value=" "
+                    style="width: 50px; height: 50px;
+                    font-size: 30px;border: 1px solid gold;
+                    background-color: black; color: aqua;"
+                    onclick="fcambiarTurno(4)"/>
+            <input type="button" id="b5" value=" "
+                    style="width: 50px; height: 50px;
+                    font-size: 30px;border: 1px solid gold;
+                    background-color:black; color: aqua;"
+                    onclick="fcambiarTurno(5)"/>
+            <input type="button" id="b6" value=" "
+                    style="width: 50px; height: 50px;
+                    font-size: 30px;border: 1px solid gold;
+                    background-color: black; color: aqua;"
+                    onclick="fcambiarTurno(6)"/>
+            <br>
+
+            <input type="button" id="b7" value=" "
+                    style="width: 50px; height: 50px;
+                    font-size: 30px;border: 1px solid gold;
+                    background-color: black; color: aqua;"
+                    onclick="fcambiarTurno(7)"/>
+            <input type="button" id="b8" value=" "
+                    style="width: 50px; height: 50px;
+                    font-size: 30px;border: 1px solid gold;
+                    background-color: black; color: aqua;"
+                    onclick="fcambiarTurno(8)"/>
+            <input type="button" id="b9" value=" "
+                    style="width: 50px; height: 50px;
+                    font-size: 30px;border: 1px solid gold;
+                    background-color: black; color: aqua;"
+                    onclick="fcambiarTurno(9)"/>
+            <br><br>
+
+            <input type="button" id="brestablecer" 
+                    value="Restablecer"
+                    style="width: 160px; height: 50px;
+                    font-size: 30px;border: 1px solid gold;
+                    background-color: black; color: aquamarine"
+                    onclick="fResablecer()"/>
+            <br>
+
+        </center>
+    </body>
 </html>
