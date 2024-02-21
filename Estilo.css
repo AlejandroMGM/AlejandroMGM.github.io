@@ -1,0 +1,50 @@
+/* Estilos para la versión atardecer */
+body {
+    background-color: #0d0d0d; /* Negro */
+    color: #ffffff; /* Blanco */
+}
+
+#Titulo {
+    background-color: #1f1f1f; /* Negro más oscuro */
+    color: #FFD700; /* Oro */
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+#Titulo img {
+    max-width: 200px; /* Ajusta el ancho máximo de la imagen */
+    display: block; /* Para centrar la imagen horizontalmente */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    margin-top: 10px; /* Agrega un margen superior */
+}
+
+.comando {
+    background-color: #1f1f1f; /* Negro más oscuro */
+    color: #00ff00; /* Verde */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.descripcion {
+    background-color: orange; /* Blanco */
+    color: #0d0d0d; /* Negro */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.Comandos_NMC {
+    background-color: black;
+    color: white;
+    padding: 3px 5px; /* Ajusta el relleno para que sea visible */
+    border-radius: 3px; /* Opcional: Añade bordes redondeados para mejorar la apariencia */
+}
+
+.Comandos_Linux {
+    background-color: black;
+    color: rgb(45, 200, 45);
+    padding: 3px 5px; /* Ajusta el relleno para que sea visible */
+    border-radius: 3px; /* Opcional: Añade bordes redondeados para mejorar la apariencia */
+}
