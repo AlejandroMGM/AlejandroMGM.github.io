@@ -1,126 +1,142 @@
 .body {
     background-image: url('https://e0.pxfuel.com/wallpapers/619/123/desktop-wallpaper-summer-beach-landscape.jpg');
-    background-size: cover; /* para cubrir todo el fondo */
-    background-repeat: no-repeat; /* para evitar la repetición de la imagen */
+    background-size: cover; 
+    background-repeat: no-repeat; 
 }
 
 #Titulo {
-    background-color: #ff0000; /* Rojo (salvavidas) */
-    color: #ffffff; /* Blanco */
+    background-color: #ff0000; 
+    color: #ffffff; 
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     padding: 20px;
 }
 
+#Titulo img {
+    max-width: 200px; 
+    display: block; 
+    margin: 0 auto; 
+    margin-top: 10px; 
+}
+
 .description {
-    background-color: #deb887; /* Arena fuerte */
-    color: #ffffff; /* Blanco */
+    background-color: #deb887; 
+    color: #ffffff; 
     padding: 20px;
     border-radius: 10px;
 }
 
 #botton_1 {
-    background-color: #add8e6; /* Azul pastel */
-    color: #4a235a; /* Púrpura oscuro */
-    border-color: #add8e6; /* Azul pastel */
+    background-color: #add8e6; 
+    color: #4a235a; 
+    border-color: #add8e6; 
+}
+
+.comando {
+    background-color: #1f1f1f; /* Negro más oscuro */
+    color: #00ff00; /* Verde */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.Comandos_NMC {
+    background-color: black;
+    color: white;
+    padding: 3px 5px; /* Ajusta el relleno para que sea visible */
+    border-radius: 3px; /* Opcional: Añade bordes redondeados para mejorar la apariencia */
 }
 
 #botton_1:hover {
-    background-color: #87ceeb; /* Azul cielo */
-    color: #4a235a; /* Púrpura oscuro */
-    border-color: #87ceeb; /* Azul cielo */
+    background-color: #87ceeb; 
+    color: #4a235a; 
+    border-color: #87ceeb; 
 }
 
 #botton_2 {
-    background-color: #ffb6c1; /* Rosa pastel */
-    color: #4a235a; /* Púrpura oscuro */
-    border-color: #ffb6c1; /* Rosa pastel */
+    background-color: #ffb6c1; 
+    color: #4a235a; 
+    border-color: #ffb6c1;
 }
 
 #botton_2:hover {
-    background-color: #ff69b4; /* Rosa brillante */
-    color: #4a235a; /* Púrpura oscuro */
-    border-color: #ff69b4; /* Rosa brillante */
+    background-color: #ff69b4; 
+    color: #4a235a; 
+    border-color: #ff69b4; 
 }
 
 
 #botton_3 {
-    background-color: #d8bfd8; /* Morado pastel */
-    color: #4a235a; /* Púrpura oscuro */
-    border-color: #d8bfd8; /* Morado pastel */
+    background-color: #d8bfd8; 
+    color: #4a235a; 
+    border-color: #d8bfd8; 
 }
 
 #botton_3:hover {
-    background-color: #ba55d3; /* Morado medio */
-    color: #4a235a; /* Púrpura oscuro */
-    border-color: #ba55d3; /* Morado medio */
+    background-color: #ba55d3; 
+    color: #4a235a; 
+    border-color: #ba55d3; 
 }
 
 
 #botton_4 {
-    background-color: #ffff99; /* Amarillo pastel */
-    color: #4a235a; /* Púrpura oscuro */
-    border-color: #ffff99; /* Amarillo pastel */
+    background-color: #ffff99; 
+    color: #4a235a; 
+    border-color: #ffff99; 
 }
 
 #botton_4:hover {
-    background-color: #ffff66; /* Amarillo brillante */
-    color: #4a235a; /* Púrpura oscuro */
-    border-color: #ffff66; /* Amarillo brillante */
+    background-color: #ffff66; 
+    color: #4a235a; 
+    border-color: #ffff66; 
 }
 
 #botton_5 {
-    background-color: #98fb98; /* Verde pastel */
-    color: #4a235a; /* Púrpura oscuro */
-    border-color: #98fb98; /* Verde pastel */
+    background-color: #98fb98;
+    color: #4a235a; 
+    border-color: #98fb98;
 }
 
 #botton_5:hover {
-    background-color: #7cfc00; /* Verde lima */
-    color: #4a235a; /* Púrpura oscuro */
-    border-color: #7cfc00; /* Verde lima */
+    background-color: #7cfc00; 
+    color: #4a235a; 
+    border-color: #7cfc00; 
 }
 
 #botton_6 {
-    background-color: #ffa07a; /* Naranja pastel */
-    color: #4a235a; /* Púrpura oscuro */
-    border-color: #ffa07a; /* Naranja pastel */
+    background-color: #ffa07a; 
+    color: #4a235a; 
+    border-color: #ffa07a; 
 }
 
 #botton_6:hover {
-    background-color: #ff7f50; /* Naranja coral */
-    color: #4a235a; /* Púrpura oscuro */
-    border-color: #ff7f50; /* Naranja coral */
+    background-color: #ff7f50; 
+    color: #4a235a; 
+    border-color: #ff7f50; 
 }
 
 #botton_7 {
-    background-color: #afeeee; /* Celeste pastel */
-    color: #4a235a; /* Púrpura oscuro */
-    border-color: #afeeee; /* Celeste pastel */
+    background-color: #afeeee; 
+    color: #4a235a; 
+    border-color: #afeeee; 
 }
 
 #botton_7:hover {
-    background-color: #63bde1; /* Azul cielo */
-    color: #4a235a; /* Púrpura oscuro */
-    border-color: #63bde1; /* Azul cielo */
+    background-color: #63bde1; 
+    color: #4a235a; 
+    border-color: #63bde1; 
 }
 
 #botton_8 {
-    background-color: #e6e6fa; /* Lavanda pastel */
-    color: #4a235a; /* Púrpura oscuro */
-    border-color: #e6e6fa; /* Lavanda pastel */
+    background-color: #e6e6fa; 
+    color: #4a235a; 
+    border-color: #e6e6fa; 
 }
 
 #botton_8:hover {
-    background-color: #d8bfd8; /* Morado pastel */
-    color: #4a235a; /* Púrpura oscuro */
-    border-color: #d8bfd8; /* Morado pastel */
+    background-color: #d8bfd8; 
+    color: #4a235a; 
+    border-color: #d8bfd8; 
 }
 
-#Titulo img {
-    max-width: 200px; /* Ajusta el ancho máximo de la imagen */
-    display: block; /* Para centrar la imagen horizontalmente */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
-    margin-top: 10px; /* Agrega un margen superior */
-}
