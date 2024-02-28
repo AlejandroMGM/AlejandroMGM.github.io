@@ -1,11 +1,11 @@
 .body {
-    background-color: #4a235a; /* Púrpura oscuro */
+    background-color: #87cefa; /* Azul claro (como el mar) */
     color: #ffffff; /* Blanco */
 }
 
 #Titulo {
-    background-color: #1a1a1a; /* Negro */
-    color: #ffd700; /* Oro */
+    background-color: #ff0000; /* Rojo (salvavidas) */
+    color: #ffffff; /* Blanco */
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
@@ -13,22 +13,22 @@
 }
 
 .description {
-    background-color: #ff6347; /* Rojo tomate */
+    background-color: #deb887; /* Arena fuerte */
     color: #ffffff; /* Blanco */
     padding: 20px;
     border-radius: 10px;
 }
 
 #botton_1 {
-    background-color: #ffd700; /* Oro */
+    background-color: #ffd700; /* Oro (como los juguetes de la arena) */
     color: #4a235a; /* Púrpura oscuro */
     border-color: #ffd700; /* Oro */
 }
 
 #botton_1:hover {
-    background-color: #4a235a; /* Púrpura oscuro */
-    color: #ffd700; /* Oro */
-    border: #4a235a; /* Púrpura oscuro */
+    background-color: #ffd700; /* Oro */
+    color: #4a235a; /* Púrpura oscuro */
+    border: #ffd700; /* Oro */
 }
 
 #Titulo img {
