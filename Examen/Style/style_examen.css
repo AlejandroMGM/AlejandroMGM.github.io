@@ -1,0 +1,39 @@
+.body {
+    background-color: #4a235a; /* Púrpura oscuro */
+    color: #ffffff; /* Blanco */
+}
+
+#Titulo {
+    background-color: #1a1a1a; /* Negro */
+    color: #ffd700; /* Oro */
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding: 20px;
+}
+
+.description {
+    background-color: #ff6347; /* Rojo tomate */
+    color: #ffffff; /* Blanco */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#botton_1 {
+    background-color: #ffd700; /* Oro */
+    color: #4a235a; /* Púrpura oscuro */
+    border-color: #ffd700; /* Oro */
+}
+
+#botton_1:hover {
+    background-color: #4a235a; /* Púrpura oscuro */
+    color: #ffd700; /* Oro */
+    border: #4a235a; /* Púrpura oscuro */
+}
+
+#Titulo img {
+    max-width: 200px; /* Ajusta el ancho máximo de la imagen */
+    display: block; /* Para centrar la imagen horizontalmente */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    margin-top: 10px; /* Agrega un margen superior */
+}
