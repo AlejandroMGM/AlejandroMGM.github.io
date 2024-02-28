@@ -1,6 +1,7 @@
 .body {
-    background-color: #87cefa; /* Azul claro (como el mar) */
-    color: #ffffff; /* Blanco */
+    background-image: url('https://e0.pxfuel.com/wallpapers/619/123/desktop-wallpaper-summer-beach-landscape.jpg');
+    background-size: cover; /* para cubrir todo el fondo */
+    background-repeat: no-repeat; /* para evitar la repetición de la imagen */
 }
 
 #Titulo {
@@ -20,15 +21,101 @@
 }
 
 #botton_1 {
-    background-color: #ffd700; /* Oro (como los juguetes de la arena) */
+    background-color: #add8e6; /* Azul pastel */
     color: #4a235a; /* Púrpura oscuro */
-    border-color: #ffd700; /* Oro */
+    border-color: #add8e6; /* Azul pastel */
 }
 
 #botton_1:hover {
-    background-color: #ffd700; /* Oro */
+    background-color: #87ceeb; /* Azul cielo */
     color: #4a235a; /* Púrpura oscuro */
-    border: #ffd700; /* Oro */
+    border-color: #87ceeb; /* Azul cielo */
+}
+
+#botton_2 {
+    background-color: #ffb6c1; /* Rosa pastel */
+    color: #4a235a; /* Púrpura oscuro */
+    border-color: #ffb6c1; /* Rosa pastel */
+}
+
+#botton_2:hover {
+    background-color: #ff69b4; /* Rosa brillante */
+    color: #4a235a; /* Púrpura oscuro */
+    border-color: #ff69b4; /* Rosa brillante */
+}
+
+
+#botton_3 {
+    background-color: #d8bfd8; /* Morado pastel */
+    color: #4a235a; /* Púrpura oscuro */
+    border-color: #d8bfd8; /* Morado pastel */
+}
+
+#botton_3:hover {
+    background-color: #ba55d3; /* Morado medio */
+    color: #4a235a; /* Púrpura oscuro */
+    border-color: #ba55d3; /* Morado medio */
+}
+
+
+#botton_4 {
+    background-color: #ffff99; /* Amarillo pastel */
+    color: #4a235a; /* Púrpura oscuro */
+    border-color: #ffff99; /* Amarillo pastel */
+}
+
+#botton_4:hover {
+    background-color: #ffff66; /* Amarillo brillante */
+    color: #4a235a; /* Púrpura oscuro */
+    border-color: #ffff66; /* Amarillo brillante */
+}
+
+#botton_5 {
+    background-color: #98fb98; /* Verde pastel */
+    color: #4a235a; /* Púrpura oscuro */
+    border-color: #98fb98; /* Verde pastel */
+}
+
+#botton_5:hover {
+    background-color: #7cfc00; /* Verde lima */
+    color: #4a235a; /* Púrpura oscuro */
+    border-color: #7cfc00; /* Verde lima */
+}
+
+#botton_6 {
+    background-color: #ffa07a; /* Naranja pastel */
+    color: #4a235a; /* Púrpura oscuro */
+    border-color: #ffa07a; /* Naranja pastel */
+}
+
+#botton_6:hover {
+    background-color: #ff7f50; /* Naranja coral */
+    color: #4a235a; /* Púrpura oscuro */
+    border-color: #ff7f50; /* Naranja coral */
+}
+
+#botton_7 {
+    background-color: #afeeee; /* Celeste pastel */
+    color: #4a235a; /* Púrpura oscuro */
+    border-color: #afeeee; /* Celeste pastel */
+}
+
+#botton_7:hover {
+    background-color: #63bde1; /* Azul cielo */
+    color: #4a235a; /* Púrpura oscuro */
+    border-color: #63bde1; /* Azul cielo */
+}
+
+#botton_8 {
+    background-color: #e6e6fa; /* Lavanda pastel */
+    color: #4a235a; /* Púrpura oscuro */
+    border-color: #e6e6fa; /* Lavanda pastel */
+}
+
+#botton_8:hover {
+    background-color: #d8bfd8; /* Morado pastel */
+    color: #4a235a; /* Púrpura oscuro */
+    border-color: #d8bfd8; /* Morado pastel */
 }
 
 #Titulo img {
