@@ -33,12 +33,11 @@
     border-color: #add8e6; 
 }
 
-.comando {
-    background-color: #1f1f1f; /* Negro más oscuro */
-    color: #00ff00; /* Verde */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
+.Comandos_Linux {
+    background-color: black;
+    color: rgb(45, 200, 45);
+    padding: 3px 5px; /* Ajusta el relleno para que sea visible */
+    border-radius: 3px; /* Opcional: Añade bordes redondeados para mejorar la apariencia */
 }
 
 .Comandos_NMC {
