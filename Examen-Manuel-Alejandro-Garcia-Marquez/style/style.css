@@ -1,0 +1,101 @@
+#body {
+    background-color: #a3a1a1dd; 
+    color: black; 
+}
+
+#Titulo {
+    background-color: #1f1f1f; 
+    color: #FFD700; 
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+#Titulo img {
+    max-width: 200px; 
+    display: block; 
+    margin: 0 auto; 
+    margin-top: 10px; 
+}
+
+.comando {
+    background-color: #1f1f1f; /* Negro más oscuro */
+    color: orange; /* Verde */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+.description {
+    background-color: #deb887; 
+    color: #ffffff; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.Comandos_Linux {
+    background-color: black;
+    color: rgb(45, 200, 45);
+    padding: 3px 5px; /* Ajusta el relleno para que sea visible */
+    border-radius: 3px; /* Opcional: Añade bordes redondeados para mejorar la apariencia */
+}
+
+.Comandos_NMC {
+    background-color: black;
+    color: white;
+    padding: 3px 5px; /* Ajusta el relleno para que sea visible */
+    border-radius: 3px; /* Opcional: Añade bordes redondeados para mejorar la apariencia */
+}
+
+
+#botton_5 {
+    background-color: orange;
+    color: black; 
+    border-color: orange;
+}
+
+#botton_5:hover {
+    background-color: rgb(174, 115, 5); 
+    color: white; 
+    border-color: rgb(174, 115, 5); 
+}
+
+#botton_6 {
+    background-color: red; 
+    color: black; 
+    border-color: red; 
+}
+
+#botton_6:hover {
+    background-color: rgb(135, 12, 12); 
+    color: white; 
+    border-color:  rgb(135, 12, 12); 
+}
+
+#botton_7 {
+    background-color: greenyellow; 
+    color: black; 
+    border-color: greenyellow; 
+}
+
+#botton_7:hover {
+    background-color: rgb(2, 84, 2); 
+    color: white; 
+    border-color: rgb(2, 84, 2); 
+}
+
+#botton_8 {
+    background-color: black; 
+    color: white; 
+    border-color: black; 
+}
+
+#botton_8:hover {
+    background-color: rgb(0, 234, 255); 
+    color:black; 
+    border-color: rgb(0, 234, 255); 
+}
+
