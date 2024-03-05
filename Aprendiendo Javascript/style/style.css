@@ -1,0 +1,9 @@
+.grid-container{
+    display: gird;
+}
+
+.cuadro{
+    width: 4rem;
+    height: 4rem;
+    background-color: aquamarine;
+}
