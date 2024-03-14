@@ -40,11 +40,26 @@ function tablaAuto(){
 
 tablaAuto();
 
-
 function pintarHover(){
-    var cuadrosHover = document.getElementById.querySelectorAll("#R1C1");
-    //cuadrosHover.forEach(this.backgroundColor = "blue");
-    cuadrosHover[0].style.backgroundColor = "white";
-}
+    var arreglo = [];
+    var cuadrosHover = document.querySelectorAll("#R1C1,#R1C2,#R1C3,#R2C3,#R3C3,#R3C2,#R4C2,#R5C2,#R5C3,#R5C4,#R5C5,#R5C6,#R6C6,#R17C10");
+    cuadrosHover.forEach(function(value, key){
+        arreglo.push(value.id);
+        }
+    )
+    console.log(arreglo);
 
-pintarHover();
+    cuadrosHover.forEach(function(value, key){
+        //console.log(value.id + "  " + key);
+        //value.style.backgroundColor = "rgba(255, 165, 0, 0.5)";
+        value.addEventListener("mouseover", function(element){
+            console.log(value.id);
+            console.log(element.target.id);
+            if(element.target.id==arreglo[key]){
+                value.style.backgroundColor = "rgba(255, 165, 0, 0.5)";
+            }
+        })
+    });  
+}
+ 
+pintarHover()
