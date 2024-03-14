@@ -1,7 +1,7 @@
 // Función que se ejecuta cuando se hace clic en el botón
 document.getElementById("boton").addEventListener("click", function() {
     var imagenDiv = document.getElementById("imagen");
-    var imageUrl = "https://m.media-amazon.com/images/I/41BIcBC3TeL.jpg"; // URL de la imagen
+    var imageUrl = "https://www.redescena.net/temfiles/fotos/pq/peque[3].jpg"; // URL de la imagen
 
     // Comprobar si la imagen ya está establecida
     if (imagenDiv.style.backgroundImage === "none") {
