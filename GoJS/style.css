@@ -1,0 +1,48 @@
+.titulo {
+    margin-bottom: 0.5rem; /* Equivalente a 2 unidades de espacio de bootstrap */
+    background-color: rgba(255, 0, 0, 0.5); /* Color de fondo similar a magma más rojo con opacidad */
+    border: 4px dashed rgba(255, 140, 0, 0.7); /* Borde punteado con opacidad */
+    margin-top: 0.5rem; /* Equivalente a 2 unidades de espacio de bootstrap */
+    text-align: center; /* Texto centrado */
+    color: rgba(255, 215, 0, 0.9); /* Color de texto con opacidad */
+    font-family: Impact, Charcoal, sans-serif; /* Fuente más gruesa para un aspecto más impactante */
+    font-style: normal; /* Estilo de la fuente normal */
+    font-size: 2rem; /* Tamaño de la fuente más grande */
+}
+
+.titulo img {
+    max-width: 200px; 
+    display: block; 
+    margin: 0 auto; 
+    margin-top: 10px; 
+}
+
+.body {
+    background-color: rgba(47, 79, 79, 0.7); /* Color de fondo gris oscuro con opacidad */
+    background-image: url('https://services.meteored.com/img/article/cuales-han-sido-las-3-erupciones-volcanicas-mas-mortales-de-la-historia-1689864923882_768.jpg'); 
+    background-size: cover; /* Ajustar la imagen de fondo al tamaño del viewport */
+    background-repeat: no-repeat; /* Evitar repetición de la imagen de fondo */
+    background-attachment: fixed; /* Fijar la imagen de fondo para que no se desplace al hacer scroll */
+    font-family: Arial, sans-serif; /* Familia de fuente genérica */
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar relleno */
+}
+
+.intro {
+    margin-bottom: 2rem; /* Espaciado más grande para un aspecto más desordenado */
+    background-color: rgba(128, 0, 0, 0.7); /* Color de fondo rojo oscuro translúcido */
+    border: 8px solid rgba(128, 0, 0, 0.7); /* Borde sólido con opacidad */
+    margin-top: 2rem; /* Espaciado más grande para un aspecto más desordenado */
+    text-align: center; /* Texto centrado */
+    color: rgba(255, 215, 0, 0.9); /* Color de texto naranja con opacidad */
+    font-family: Impact, Charcoal, sans-serif; /* Fuente más gruesa para un aspecto más impactante */
+    font-style: italic; /* Mantener el estilo de la fuente como itálico */
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    padding: 20px; /* Añadir relleno para separar el texto del borde */
+    line-height: 1.5; /* Ajustar el espacio entre líneas */
+}
+
+.diagram-container {
+    background-color: rgba(47, 79, 79, 0.7); /* Azul mar traslúcido */
+    position: relative; /* Posición relativa para que el contenido interno se posicione correctamente */
+}
