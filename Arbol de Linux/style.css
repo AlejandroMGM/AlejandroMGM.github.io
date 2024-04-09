@@ -1,0 +1,51 @@
+.titulo {
+    margin-bottom: 0.5rem;
+    background-color: rgba(52, 101, 164, 0.8); /* Azul de Linux translúcido */
+    border: 4px solid rgba(204, 0, 0, 0.8); /* Rojo de Linux translúcido */
+    margin-top: 0.5rem;
+    text-align: center;
+    color: #fce94f; /* Amarillo de Linux */
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.titulo img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.body {
+    background-color: rgba(186, 189, 182, 0.9); /* Gris claro de Linux translúcido */
+    background-image: url('https://www.linuxadictos.com/wp-content/uploads/mejores-distribuciones-linux-distros.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.intro {
+    margin-bottom: 2rem;
+    background-color: rgba(255, 165, 0, 0.8); /* Naranja translúcido */
+    border: 3px solid rgba(0, 0, 0, 0.8); /* Borde negro translúcido */
+    margin-top: 2rem;
+    text-align: center;
+    color: #fff; /* Color de letra blanco */
+    font-family: Hack, monospace;
+    font-style: italic;
+    font-size: 1.5rem;
+    padding: 15px;
+    line-height: 1;
+}
+
+.diagram-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Negro translúcido */
+    border: 3px solid rgba(255, 165, 0, 0.8); /* Naranja translúcido */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
