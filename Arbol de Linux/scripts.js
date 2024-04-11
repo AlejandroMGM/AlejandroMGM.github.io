@@ -126,12 +126,13 @@ function init() {
             stretch: go.GraphObject.Horizontal,  // take up whole available width
             margin: 8,
             defaultAlignment: go.Spot.Left,  // thus no need to specify alignment on each element
+            
           },
-          $(go.TextBlock, textStyle("headOf"),
-            new go.Binding("text", "headOf", head => "Head of: " + head)
+          $(go.TextBlock, textStyle("Conexion"),
+            new go.Binding("text", "Conexion", head => "Conexion: " + head)
           ),
           $(go.TextBlock, textStyle("boss"),
-            new go.Binding("margin", "headOf", head => mt8), // some space above if there is also a headOf value
+            new go.Binding("margin", "Conexion", head => mt8), // some space above if there is also a headOf value
             new go.Binding("text", "boss", boss => {
               var boss = myDiagram.model.findNodeDataForKey(boss);
               if (boss !== null) {
@@ -139,7 +140,7 @@ function init() {
               }
               return "";
             })
-          )
+          ),
         )
       )
     );
@@ -155,8 +156,8 @@ function init() {
   var nodeDataArray = [
     { key: 0, name: "Unix", title: "Sistema operativo precursor de Linux", icon: "https://static-00.iconduck.com/assets.00/unix-icon-1940x2048-3dtyhlda.png" },
     { key: 1, boss: 0, name: "Linux", title: "Núcleo de sistema operativo de código abierto", icon: "https://cdn-icons-png.flaticon.com/512/518/518713.png" },
-    { key: 2, boss: 0, name: "MS-DOS", title: "Sistema operativo precursor de Windows", icon: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Msdos-icon.png" }, // Antecesor de Windows
-    { key: 3, boss: 2, name: "Windows", title: "Sistema operativo propietario desarrollado por Microsoft", icon: "https://cdn.icon-icons.com/icons2/1195/PNG/512/1490889710-windows_82514.png" }, // Conexión con Windows
+    { key: 2, boss: 0, name: "MS-DOS", title: "Sistema operativo precursor de Windows", Conexion: "Unix se desarrolló como un sistema operativo robusto para entornos multiusuario y multitarea, mientras que MS-DOS fue diseñado inicialmente para manejar una sola tarea a la vez en sistemas personales. No comparten una relación directa en términos de derivación o influencia técnica.", icon: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Msdos-icon.png" }, // Antecesor de Windows
+    { key: 3, boss: 2, name: "Windows", title: "Sistema operativo propietario desarrollado por Microsoft",  Conexion: "Windows y MS-DOS tienen una relación histórica muy estrecha. Las primeras versiones de Windows (como Windows 1.0, 2.0, 3.x) eran esencialmente interfaces gráficas que se ejecutaban sobre MS-DOS.", icon: "https://cdn.icon-icons.com/icons2/1195/PNG/512/1490889710-windows_82514.png" }, // Conexión con Windows
     { key: 4, boss: 1, name: "Debian", title: "Distribución Linux robusta y estable", icon: "https://www.debian.org/logos/openlogo-100.png" },
     { key: 5, boss: 1, name: "Red Hat", title: "Distribución Linux enfocada en el entorno empresarial", icon: "https://cdn.icon-icons.com/icons2/2415/PNG/512/redhat_plain_logo_icon_146370.png" },
     { key: 6, boss: 1, name: "Arch Linux", title: "Distribución Linux orientada a usuarios avanzados y personalizable", icon: "https://cdn.icon-icons.com/icons2/2699/PNG/512/archlinux_logo_icon_167835.png" },
@@ -172,8 +173,8 @@ function init() {
     { key: 16, boss: 5, name: "CentOS", title: "Distribución Linux de código abierto y orientada a empresas", icon: "https://static-00.iconduck.com/assets.00/centos-icon-144x144-5vyw7rll.png" },
     { key: 17, boss: 6, name: "Manjaro", title: "Distribución Linux basada en Arch Linux con enfoque en facilidad de uso", icon: "https://static-00.iconduck.com/assets.00/manjaro-logo-icon-512x506-x22yhdux.png" },
     { key: 18, boss: 10, name: "Elementary OS", title: "Distribución Linux con diseño y usabilidad enfocados en la estética", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Elementary_logo.svg/1200px-Elementary_logo.svg.png" },
-    { key: 19, boss: 1, name: "Android", title: "Sistema operativo móvil basado en el núcleo de Linux", icon: "https://w7.pngwing.com/pngs/658/459/png-transparent-android-computer-icons-android-text-logo-grass.png" },
-    { key: 20, boss: 0, name: "iOS", title: "Sistema operativo móvil para iPhone y iPad de Apple", icon: "https://cdn.icon-icons.com/icons2/2170/PNG/512/apple_ios_brand_logo_icon_133257.png" },
+    { key: 19, boss: 1, name: "Android", title: "Sistema operativo móvil basado en el núcleo de Linux", Conexion: "Aunque no es una distribución de Linux de escritorio, se basa en el núcleo de Linux y es ampliamente utilizado en dispositivos móviles.", icon: "https://w7.pngwing.com/pngs/658/459/png-transparent-android-computer-icons-android-text-logo-grass.png" },
+    { key: 20, boss: 0, name: "iOS", title: "Sistema operativo móvil para iPhone y iPad de Apple",  Conexion: "No está basado en Linux, sino en el sistema operativo Darwin de Apple, que tiene raíces en Unix.", icon: "https://cdn.icon-icons.com/icons2/2170/PNG/512/apple_ios_brand_logo_icon_133257.png" },
     { key: 21, boss: 8, name: "OpenSUSE", title: "Distribución Linux comunitaria con enfoque en el uso empresarial", icon: "https://cdn.icon-icons.com/icons2/1508/PNG/512/distributorlogoopensuse_104071.png" }
 ];
 
