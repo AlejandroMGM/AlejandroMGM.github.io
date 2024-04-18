@@ -1,0 +1,44 @@
+.titulo {
+    margin-bottom: 0.5rem;
+    background-color:  rgb(236, 118, 104);
+    border: 4px solid turquoise; 
+    margin-top: 0.5rem;
+    text-align: center;
+    color:linear-gradient(145deg, rgba(0, 0, 0, 1), rgba(55, 55, 55, 0.8)); 
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.titulo img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.body {
+    background-color: whitesmoke;
+}
+
+.intro {
+    margin-bottom: 2rem;
+    background-color: turquoise;
+    border: 3px solid gold; 
+    margin-top: 2rem;
+    text-align: center;
+    color:  rgb(236, 118, 104);
+    font-family: Hack, monospace;
+    font-style: italic;
+    font-size: 1.5rem;
+    padding: 15px;
+    line-height: 1;
+}
+
+.diagram-container {
+    background-color: palegoldenrod; 
+    border: 10px solid  turquoise; 
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
