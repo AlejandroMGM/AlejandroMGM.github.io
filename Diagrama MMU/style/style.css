@@ -1,0 +1,57 @@
+.titulo {
+    margin-bottom: 0.5rem;
+    background-color: rgba(0, 100, 100, 0.8); /* Verde oscuro translúcido */
+    border: 4px solid rgba(0, 255, 255, 0.8); /* Cyan translúcido */
+    margin-top: 0.5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9); /* Blanco translúcido */
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.titulo img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.body {
+    background-color: rgba(25, 25, 112, 0.9); /* Azul metálico oscuro translúcido */
+    background-image: url('https://www.trecebits.com/wp-content/uploads/2023/08/Memoria-RAM-virtual-para-moviles.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.intro {
+    margin-bottom: 2rem;
+    background-color: rgba(255, 69, 0, 0.8); /* Rojo oscuro translúcido */
+    border: 3px solid rgba(255, 255, 255, 0.8); /* Blanco translúcido */
+    margin-top: 2rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9); /* Blanco translúcido */
+    font-family: Hack, monospace;
+    font-style: italic;
+    font-size: 1.5rem;
+    padding: 15px;
+    line-height: 1;
+}
+
+.diagram-container {
+    background-color: rgba(0, 128, 128, 0.8); /* Verde oscuro translúcido */
+    border: 3px solid rgba(25, 25, 112, 0.8); /* Azul metálico oscuro translúcido */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.diagram-textarea {
+  background-color: rgba(255, 255, 255, 1); /* Blanco  */
+  border: 3px solid rgba(255, 165, 0, 0.8); /* Naranja neón */
+  padding: 10px;
+  margin-bottom: 20px;
+}
