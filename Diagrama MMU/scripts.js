@@ -68,7 +68,7 @@ function init() {
         margin: new go.Margin(0, 2),
         stretch: go.Stretch.Horizontal,
         font: '13px sans-serif',
-        maxLines: 3,
+        maxLines: 2,
         overflow: go.TextOverflow.Ellipsis,
         editable: true,
       },
@@ -158,7 +158,7 @@ function init() {
     linkToPortIdProperty: 'toPort',
     // automatically update the model that is shown on this page
     Changed: (e) => {
-      if (e.isTransactionFinished) showModel();
+      if (e.isTransactionFinished); //showModel();
     },
     nodeDataArray: [
       {
@@ -212,10 +212,10 @@ function init() {
     ],
   });
 
-  showModel(); // show the diagram's initial model
+  // showModel();  show the diagram's initial model
 
-  function showModel() {
+  /*function showModel() {
     document.getElementById('mySavedModel').textContent = myDiagram.model.toJson();
-  }
+  }*/
 }
 window.addEventListener('DOMContentLoaded', init);

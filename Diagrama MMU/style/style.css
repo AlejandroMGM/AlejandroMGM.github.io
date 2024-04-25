@@ -49,9 +49,52 @@
     margin-bottom: 20px;
 }
 
-.diagram-textarea {
+.diagram-foto {
   background-color: rgba(255, 255, 255, 1); /* Blanco  */
-  border: 3px solid rgba(255, 165, 0, 0.8); /* Naranja neón */
+  border: 3px solid black; /* Naranja neón */
   padding: 10px;
   margin-bottom: 20px;
+  background-size: contain; /* Ajusta la imagen al tamaño del div sin distorsionarla */
+  background-repeat: no-repeat; /* Evitar repetición de la imagen de fondo */
+  background-attachment: fixed; /* Fijar la imagen de fondo para que no se desplace al hacer scroll */
+  background-image: url('https://www.targethost.com.br/wp-content/uploads/2014/12/memoria-ram.jpg'); 
+}
+
+.block{
+    position: relative;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 98%;
+    height: 550px;
+    background: linear-gradient(0deg, black, rgb(44,43,43));
+}
+ 
+.block::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, HotPink, Crimson, DarkOrange, Gold ,GreenYellow,
+                                        Lime, Aquamarine,DodgerBlue, DarkOrchid, Magenta);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+ 
+@keyframes animate{
+  0%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 400% 0;
+  }
+  100%{
+    background-position: 0 0;
+  }  
+}
+ 
+.glow::after{
+    filter: blur(40px);
 }
