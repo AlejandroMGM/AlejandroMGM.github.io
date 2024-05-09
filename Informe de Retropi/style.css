@@ -1,0 +1,90 @@
+.titulo {
+    margin-bottom: 0.5rem;
+    background-color: rgba(200, 200, 200, 0.8);
+    border: 4px solid rgba(0, 255, 255, 0.8); 
+    margin-top: 0.5rem;
+    text-align: center;
+    color: black; 
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.titulo img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.body {
+    background-color: rgba(25, 25, 112, 0.9); /* Azul metálico oscuro translúcido */
+    background-image: url('https://www.raspberrypi.com/tutorials/tutorials/images/RetroPie_GREY-800x532.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.intro {
+    margin-bottom: 2rem;
+    background-color: rgba(255, 69, 0, 0.8); /* Rojo oscuro translúcido */
+    border: 3px solid rgba(255, 255, 255, 0.8); /* Blanco translúcido */
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9); /* Blanco translúcido */
+    font-family: Hack, monospace;
+    font-style: italic;
+    font-size: 1.5rem;
+    padding: 15px;
+    line-height: 1;
+}
+.img-container {
+    text-align: center;
+    margin-top: 20px; /* Puedes ajustar según sea necesario */
+}
+
+.img-container img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.intro2 {
+    margin-bottom: 2rem;
+    background-color:rgba(0, 128, 0, 0.5); /* Verde traslucido con una opacidad del 50% */
+    border: 3px solid rgba(255, 255, 255, 0.8); /* Blanco translúcido */
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9); /* Blanco translúcido */
+    font-family: Hack, monospace;
+    font-style: italic;
+    font-size: 1.5rem;
+    padding: 15px;
+    line-height: 1;
+}
+.intro3 {
+    margin-bottom: 2rem;
+    background-color:rgba(0, 0, 255, 0.5); /* Azul traslúcido con una opacidad del 50% */
+    border: 3px solid rgba(255, 255, 255, 0.8); /* Blanco translúcido */
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9); /* Blanco translúcido */
+    font-family: Hack, monospace;
+    font-style: italic;
+    font-size: 1.5rem;
+    padding: 15px;
+    line-height: 1;
+}
+
+.intro4 {
+    margin-bottom: 2rem;
+    background-color: rgba(148, 0, 211, 0.5); /* Violeta traslúcido con una opacidad del 50% */
+    border: 3px solid rgba(255, 255, 255, 0.8); /* Blanco translúcido */
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9); /* Blanco translúcido */
+    font-family: Hack, monospace;
+    font-style: italic;
+    font-size: 1.5rem;
+    padding: 15px;
+    line-height: 1;
+}
