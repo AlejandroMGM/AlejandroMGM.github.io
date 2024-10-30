@@ -1,0 +1,111 @@
+/* Ajustes generales para el contenedor del calendario */
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenido principal 3/5 desde el lado izquierdo */
+.main-content {
+    margin-left: 250px; /* Ancho de la barra lateral */
+    flex-basis: 60%; /* Ocupa 3/5 del ancho total */
+    padding: 20px;
+    background-color: #d3d3d3; /* Fondo gris metálico suave */
+    color: #000000; /* Texto negro para mejor contraste */
+}
+
+/* Área vacía al lado derecho */
+.main-content::after {
+    content: "";
+    flex-basis: 40%; /* Ocupa 2/5 del ancho total */
+}
+
+/* Contenedor del calendario con fondo gris transparente */
+.calendar-container {
+    background-color: rgba(128, 128, 128, 0.6); /* Fondo gris translúcido */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Estilos específicos para la tabla del calendario */
+.calendar {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.calendar table {
+    width: 100%;
+}
+
+.calendar th, .calendar td {
+    padding: 45px;
+    border: 1px solid #c0d6e4; /* Color de borde azul suave */
+}
+
+.calendar th {
+    background-color: #9fc5e8; /* Color de encabezado en azul tenue */
+    color: #1e3a5f; /* Texto azul oscuro para contraste */
+}
+
+.calendar .calendar-day-np {
+    background-color: #e0f0f5; /* Azul intermedio para días no disponibles */
+}
+
+.calendar .not-work {
+    background-color: #5a8d6d; /* Verde oscuro para días no laborales */
+    color: #ffffff; /* Texto blanco para contraste */
+}
+
+.calendar .day-number {
+    color: #ffffff; /* Numeración de los días en blanco */
+}
+
+/* Espacio derecho de 2/5 del ancho total */
+.right-space {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    padding: 20px;
+    background-color: #2d4d6b;
+    height: 100vh;
+}
+
+/* Botones de acción */
+.action-button {
+    background-color: #4a8dad; /* Azul metálico */
+    color: #ffffff;
+    font-size: 2.5rem; /* Aumenta el tamaño de fuente */
+    padding: 110px; /* Ajusta el padding para hacer el botón más grande */
+    margin: 20px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    width: 80%; /* Ancho del botón */
+}
+
+.action-button i {
+    margin-right: 10px;
+    font-size: 1.8rem; /* Aumenta el tamaño del icono */
+}
+
+/* Hover efecto en botones */
+.action-button:hover {
+    background-color: #3c6e8f;
+}
+
+/* Posición de los botones en la parte superior e inferior */
+#crearFormulario {
+    margin-bottom: auto; /* Coloca el botón en la parte superior */
+}
+
+#cita {
+    margin-top: auto; /* Coloca el botón en la parte inferior */
+}

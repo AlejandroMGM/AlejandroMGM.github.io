@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F7FA; /* Fondo claro y neutro */
+    color: #333; /* Texto oscuro para buen contraste */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF; /* Fondo blanco para el contenedor */
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2C3E50; /* Tono azul oscuro para títulos */
+    font-size: 2.5em;
+}
+
+.section-title {
+    color: #2980B9; /* Azul más brillante para secciones */
+    border-bottom: 2px solid #2980B9; /* Línea debajo del título */
+    padding-bottom: 5px;
+}
+
+.patient-info, .treatment-info, .vital-signs {
+    margin-top: 20px;
+}
+
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #2980B9; /* Color azul para el pie de página */
+}
+
+/* Iconos y decoraciones */
+.icon-pumpkin {
+    color: #2980B9; /* Cambiado a azul */
+    margin-right: 8px;
+}
+
+/* Estilo de tabla */
+table {
+    width: 100%;
+    background-color: #F9F9F9; /* Fondo gris claro para la tabla */
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    color: #333; /* Texto oscuro para las celdas */
+    border: 1px solid #BDC3C7; /* Borde gris suave */
+}
+
+th {
+    background-color: #2980B9; /* Azul para encabezados */
+    color: #FFFFFF; /* Texto blanco en encabezados */
+}

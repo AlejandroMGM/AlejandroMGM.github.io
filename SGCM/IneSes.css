@@ -1,0 +1,104 @@
+/* Fondo de la página de inicio de sesión */
+.login-body {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    background-image: url('https://fondosmil.co/fondo/69520.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-left: 250px; /* Da espacio para la barra lateral */
+}
+
+/* Contenedor de inicio de sesión */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6); /* Ajusta el nivel de transparencia aquí */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+.login-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos de formulario */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-label {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.login-input {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.login-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.login-remember input {
+    margin-right: 5px;
+}
+
+.login-forgot {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.login-forgot:hover {
+    text-decoration: underline;
+}
+
+/* Botón de inicio de sesión */
+.login-button {
+    padding: 10px;
+    background-color: #1d4ed8;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-button:hover {
+    background-color: #2563eb;
+}
+
+/* Link de registro */
+.login-register {
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+
+.login-register-link {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.login-register-link:hover {
+    text-decoration: underline;
+}

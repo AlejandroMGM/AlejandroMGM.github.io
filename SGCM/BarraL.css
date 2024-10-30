@@ -1,0 +1,66 @@
+/* Estilos de la barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: #2a2a2a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh; /* Asegura que ocupa el 100% de la altura de la ventana */
+    padding-top: 20px;
+    position: fixed; /* Fija la barra lateral */
+    left: 0;
+    top: 0;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra la imagen horizontalmente */
+    text-align: center;
+    padding-bottom: 20px; /* Espacio adicional debajo de la foto */
+}
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover; /* Para asegurar que la imagen se ajuste bien */
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menu li:hover {
+    background-color: #444;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu li i {
+    margin-right: 10px;
+}
+
+/* Estilos del contenido principal */
+.main-content {
+    margin-left: 250px; /* Da espacio para la barra lateral */
+    padding: 20px;
+    height: 100vh; /* Asegura que el contenido principal ocupa toda la altura de la ventana */
+    overflow-y: auto; /* Permite desplazamiento en el contenido principal */
+}

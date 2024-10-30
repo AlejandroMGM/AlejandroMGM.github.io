@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial Clínico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="HisClin.css"> <!-- Estilos específicos de Halloween -->
+    <link rel="stylesheet" href="BarraL.css"> <!-- Estilos de la barra lateral -->
+</head>
+<body>
+
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <div class="profile">
+            <img src="perfil.jpg" alt="Foto de Perfil">
+            <p>Invitado</p>
+        </div>
+        <ul class="menu">
+            <li><a href="Menu.html"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="Calendario.html"><i class="far fa-calendar-alt"></i> Calendario</a></li>
+            <li><a href="Cita.html"><i class="fas fa-stethoscope"></i> Cita</a></li>
+            <li><a href="HistorialClinico.html"><i class="fas fa-notes-medical"></i> Historial Clínico</a></li>
+            <li><a href="IniSes.html"><i class="fas fa-sign-in-alt"></i> Inicio de Sesión</a></li>
+            <li><a href="Registro.html"><i class="fas fa-user-plus"></i> Registro</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenido principal de la página -->
+    <div class="main-content">
+        <div class="container">
+            <h1>Historial Clínico</h1>
+
+            <!-- Información del Paciente -->
+            <div class="patient-info">
+                <h2 class="section-title"><i class="fas fa-user icon-pumpkin"></i>Datos del Paciente</h2>
+                <div class="data-row">
+                    <span><strong>Nombre:</strong> John Doe</span>
+                    <span><strong>Edad:</strong> 30 años</span>
+                </div>
+                <div class="data-row">
+                    <span><strong>Fecha de Consulta:</strong> 2024-10-31</span>
+                    <span><strong>Motivo de Consulta:</strong> Dolor abdominal y fiebre</span>
+                </div>
+            </div>
+
+            <!-- Tratamientos -->
+            <div class="treatment-info">
+                <h2 class="section-title"><i class="fas fa-prescription-bottle icon-pumpkin"></i>Tratamientos Recetados</h2>
+                <ul>
+                    <li>Antibioticos: Amoxicilina y Levofloxacino</li>
+                    <li>Analgesicos: Paracetamol y Ibuprofeno</li>
+                    <li>Reposo</li>
+                </ul>
+            </div>
+
+            <!-- Evolución de Signos Vitales -->
+            <div class="vital-signs">
+                <h2 class="section-title"><i class="fas fa-heartbeat icon-pumpkin"></i>Evolución de Signos Vitales</h2>
+                <table>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Temperatura (°C)</th>
+                        <th>Frecuencia Cardíaca (BPM)</th>
+                    </tr>
+                    <tr>
+                        <td>2024-10-25</td>
+                        <td>36.7</td>
+                        <td>72</td>
+                    </tr>
+                    <tr>
+                        <td>2024-10-26</td>
+                        <td>37.0</td>
+                        <td>75</td>
+                    </tr>
+                    <tr>
+                        <td>2024-10-27</td>
+                        <td>36.8</td>
+                        <td>73</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
