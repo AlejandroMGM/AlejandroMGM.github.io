@@ -31,11 +31,11 @@ body {
 /* Estilos específicos para la tabla del calendario */
 .calendar {
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
 }
 
 .calendar table {
-    width: 80%;
+    width: 70%;
 }
 
 .calendar th, .calendar td {
