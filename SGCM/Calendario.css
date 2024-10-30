@@ -31,7 +31,7 @@ body {
 /* Estilos específicos para la tabla del calendario */
 .calendar {
     margin: 0 auto;
-    width: 100%;
+    width: 80%;
 }
 
 .calendar table {
@@ -39,7 +39,7 @@ body {
 }
 
 .calendar th, .calendar td {
-    padding: 45px;
+    padding: 40px;
     border: 1px solid #c0d6e4; /* Color de borde azul suave */
 }
 
