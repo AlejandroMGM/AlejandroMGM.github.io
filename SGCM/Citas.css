@@ -1,0 +1,98 @@
+/* Estilos del contenido principal */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #f5faff; /* Fondo claro para comodidad visual */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #eaf8f9; /* Azul verdoso suave */
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 128, 128, 0.2); /* Sombra en azul verdoso */
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: center;
+    color: #1a3a3a;
+}
+
+.table thead {
+    background-color: #76c7c0; /* Azul verdoso */
+    color: #ffffff;
+}
+
+.table tbody tr:hover {
+    background-color: #b4e0dd; /* Suave contraste de azul verdoso */
+}
+
+/* Ajuste de tamaño y forma de los botones */
+.btn {
+    padding: 12px 16px; /* Aumenta el padding para hacer los botones más grandes */
+    border-radius: 12px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente más grande si es necesario */
+}
+
+/* Botones de acción en la tabla */
+.btn-warning {
+    background-color: #8a2be2; /* Morado para el botón de editar */
+    color: #ffffff;
+}
+
+.btn-warning:hover {
+    background-color: #a64cf1; /* Morado más claro al pasar el cursor */
+}
+
+.btn-success {
+    background-color: #28a745; /* Verde para el botón con círculo */
+    color: #ffffff;
+}
+
+.btn-success:hover {
+    background-color: #40c95d; /* Verde más claro al pasar el cursor */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Rojo para el botón con X */
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background-color: #e05d6d; /* Rojo más claro al pasar el cursor */
+}
+
+/* Área de arrastrar y soltar archivos */
+.drop-area {
+    border: 2px dashed #76c7c0; /* Borde azul verdoso */
+    padding: 20px;
+    text-align: center;
+    color: #2e7d7b;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.drop-area.dragging {
+    background-color: #c2f0ed; /* Fondo más claro al arrastrar */
+}
+
+.btn-metallic {
+    background-color: #5d8aa8; /* Azul metálico */
+    color: #ffffff; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 10px; /* Margen entre botones */
+    text-decoration: none; /* Sin subrayado en el texto */
+    transition: background-color 0.3s ease; /* Transición al pasar el cursor */
+    display: inline-block; /* Asegúrate de que el botón se comporte como un bloque */
+}
+
+.btn-metallic:hover {
+    color: #ffffff; /* Texto blanco */
+    background-color: #3e6976; /* Azul metálico más oscuro al pasar el cursor */
+}

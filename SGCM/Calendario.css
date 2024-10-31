@@ -25,21 +25,21 @@ body {
     background-color: rgba(128, 128, 128, 0.6); /* Fondo gris translúcido */
     padding: 20px;
     border-radius: 10px;
-    width: 100%;
+    width: 90%;
 }
 
 /* Estilos específicos para la tabla del calendario */
 .calendar {
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
 }
 
 .calendar table {
-    width: 70%;
+    width: 100%;
 }
 
 .calendar th, .calendar td {
-    padding: 40px;
+    padding: 45px;
     border: 1px solid #c0d6e4; /* Color de borde azul suave */
 }
 
@@ -77,8 +77,8 @@ body {
 .action-button {
     background-color: #4a8dad; /* Azul metálico */
     color: #ffffff;
-    font-size: 2.5rem; /* Aumenta el tamaño de fuente */
-    padding: 110px; /* Ajusta el padding para hacer el botón más grande */
+    font-size: 1.8rem; /* Tamaño de fuente del texto */
+    padding: 110px;
     margin: 20px 0;
     border: none;
     border-radius: 10px;
@@ -91,9 +91,19 @@ body {
     width: 80%; /* Ancho del botón */
 }
 
+.action-button a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Asegura que el enlace ocupe todo el botón */
+}
+
+/* Tamaño del ícono dentro de los botones */
 .action-button i {
     margin-right: 10px;
-    font-size: 1.8rem; /* Aumenta el tamaño del icono */
+    font-size: 4rem; /* Aumenta el tamaño del ícono */
 }
 
 /* Hover efecto en botones */
