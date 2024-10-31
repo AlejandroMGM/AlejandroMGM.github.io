@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Paciente</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Formulairo.css">
+    <link rel="stylesheet" href="BarraL.css">
+</head>
+<body>
+
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <div class="profile">
+            <img src="perfil.jpg" alt="Foto de Perfil">
+            <p>Invitado</p>
+        </div>
+        <ul class="menu">
+            <li><a href="Menu.html"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="Calendario.html"><i class="far fa-calendar-alt"></i> Calendario</a></li>
+            <li><a href="Cita.html"><i class="fas fa-stethoscope"></i> Cita</a></li>
+            <li><a href="HistorialClinico.html"><i class="fas fa-notes-medical"></i> Historial Clínico</a></li>
+            <li><a href="IniSes.html"><i class="fas fa-sign-in-alt"></i> Inicio de Sesión</a></li>
+            <li><a href="Registro.html"><i class="fas fa-user-plus"></i> Registro</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <div class="container">
+            <!-- Parte 1 -->
+            <div class="form-section active" id="section1">
+                <h2>Parte 1: Información General del Paciente</h2>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="age">Edad:</label>
+                <input type="number" id="age" name="age" required><br><br>
+                
+                <label for="birthdate">Fecha de nacimiento:</label>
+                <input type="date" id="birthdate" name="birthdate" required><br><br>
+                
+                <label for="gender">Género:</label>
+                <input type="text" id="gender" name="gender" required><br><br>
+                
+                <label for="marital-status">Estado civil:</label>
+                <input type="text" id="marital-status" name="marital-status" required><br><br>
+                
+                <label for="curp">CURP:</label>
+                <input type="text" id="curp" name="curp" required><br><br>
+                
+                <label for="rfc">RFC:</label>
+                <input type="text" id="rfc" name="rfc" required><br><br>
+                
+                <button type="button" onclick="nextSection(2)">Continuar</button>
+            </div>
+
+            <!-- Parte 2 -->
+            <div class="form-section" id="section2">
+                <h2>Parte 2: Información Médica General</h2>
+                <label for="allergies">Alergias:</label>
+                <input type="text" id="allergies" name="allergies"><br><br>
+                
+                <label for="medications">Medicamentos actuales:</label>
+                <input type="text" id="medications" name="medications"><br><br>
+                
+                <label for="medical-history">Antecedentes médicos:</label>
+                <input type="text" id="medical-history" name="medical-history"><br><br>
+                
+                <label for="surgeries">Cirugías previas:</label>
+                <input type="text" id="surgeries" name="surgeries"><br><br>
+                
+                <label for="blood-group">Grupo sanguíneo:</label>
+                <input type="text" id="blood-group" name="blood-group" required><br><br>
+                
+                <label for="donor">¿Es donante?:</label>
+                <input type="text" id="donor" name="donor"><br><br>
+                
+                <label for="tattoos">¿Tiene tatuajes? (Si es así, desde cuándo):</label>
+                <input type="text" id="tattoos" name="tattoos"><br><br>
+                
+                <button type="button" onclick="nextSection(3)">Continuar</button>
+            </div>
+
+            <!-- Parte 3 -->
+            <div class="form-section" id="section3">
+                <h2>Parte 3: Información de Contacto</h2>
+                <label for="address">Dirección:</label>
+                <input type="text" id="address" name="address" required><br><br>
+                
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="emergency-contact">Persona de contacto en caso de emergencia:</label>
+                <input type="text" id="emergency-contact" name="emergency-contact" required><br><br>
+                
+                <label for="emergency-phone">Teléfono de emergencia:</label>
+                <input type="tel" id="emergency-phone" name="emergency-phone" required><br><br>
+                
+                <button type="button" onclick="submitForm()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function nextSection(sectionNumber) {
+            const activeSection = document.querySelector('.form-section.active');
+            const nextSection = document.getElementById(`section${sectionNumber}`);
+        
+            if (nextSection) {
+                activeSection.classList.remove('active');
+                nextSection.classList.add('active');
+            }
+        }
+
+        function submitForm() {
+            // Recopilar datos del formulario
+            const nombre = document.getElementById('name').value;
+            const edad = document.getElementById('age').value;
+            const fechaNacimiento = document.getElementById('birthdate').value;
+            const genero = document.getElementById('gender').value;
+            const estadoCivil = document.getElementById('marital-status').value;
+            const curp = document.getElementById('curp').value;
+            const rfc = document.getElementById('rfc').value;
+            const alergias = document.getElementById('allergies').value;
+            const medicamentos = document.getElementById('medications').value;
+            const antecedentes = document.getElementById('medical-history').value;
+            const cirugias = document.getElementById('surgeries').value;
+            const grupoSanguineo = document.getElementById('blood-group').value;
+            const donante = document.getElementById('donor').value;
+            const tatuajes = document.getElementById('tattoos').value;
+            const direccion = document.getElementById('address').value;
+            const telefono = document.getElementById('phone').value;
+            const correo = document.getElementById('email').value;
+            const contactoEmergencia = document.getElementById('emergency-contact').value;
+            const telefonoEmergencia = document.getElementById('emergency-phone').value;
+
+            // Crear el contenido del archivo
+            const content = `
+                Nombre: ${nombre}
+                Edad: ${edad}
+                Fecha de Nacimiento: ${fechaNacimiento}
+                Género: ${genero}
+                Estado Civil: ${estadoCivil}
+                CURP: ${curp}
+                RFC: ${rfc}
+                Alergias: ${alergias}
+                Medicamentos Actuales: ${medicamentos}
+                Antecedentes Médicos: ${antecedentes}
+                Cirugías Previas: ${cirugias}
+                Grupo Sanguíneo: ${grupoSanguineo}
+                ¿Es Donante?: ${donante}
+                ¿Tiene Tatuajes?: ${tatuajes}
+                Dirección: ${direccion}
+                Teléfono: ${telefono}
+                Correo Electrónico: ${correo}
+                Persona de Contacto en Emergencia: ${contactoEmergencia}
+                Teléfono de Emergencia: ${telefonoEmergencia}
+            `;
+            
+            // Crear un archivo de texto y descargarlo
+            const blob = new Blob([content], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'informacion_paciente.txt';
+            link.click();
+
+            // Redirigir a Calendario.html
+            window.location.href = 'Calendario.html';
+        }
+    </script>
+</body>
+</html>

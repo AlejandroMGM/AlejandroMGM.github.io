@@ -6,9 +6,10 @@
     <title>Registro</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="BarraL.css">
+    <link rel="stylesheet" href="Registro.css">
 </head>
-<body>
-
+<body class="register-body">
+    <!-- Barra lateral -->
     <div class="sidebar">
         <div class="profile">
             <img src="perfil.jpg" alt="Foto de Perfil">
@@ -23,4 +24,38 @@
             <li><a href="Registro.html"><i class="fas fa-user-plus"></i> Registro</a></li>
         </ul>
     </div>
-    <H1>Nada aun</H1>
+    
+    <!-- Contenedor de registro -->
+    <div class="register-container">
+        <h2 class="register-title">Registro</h2>
+        <form action="#" method="POST" class="register-form">
+            <label for="name" class="register-label">Nombre</label>
+            <input type="text" id="name" name="name" class="register-input" required>
+
+            <label for="phone" class="register-label">Número Telefónico</label>
+            <input type="tel" id="phone" name="phone" class="register-input" required>
+
+            <label for="email" class="register-label">Correo Electrónico</label>
+            <input type="email" id="email" name="email" class="register-input" required>
+
+            <label for="user-type" class="register-label">Tipo de Usuario</label>
+            <select id="user-type" name="user_type" class="register-input" required>
+                <option value="Paciente">Paciente</option>
+                <option value="Medico">Médico</option>
+            </select>
+
+            <label for="password" class="register-label">Contraseña</label>
+            <input type="password" id="password" name="password" class="register-input" required>
+
+            <label for="confirm-password" class="register-label">Verificación de Contraseña</label>
+            <input type="password" id="confirm-password" name="confirm_password" class="register-input" required>
+
+            <button type="submit" class="register-button">Registrarse</button>
+
+            <p class="register-login">
+                ¿Ya tienes cuenta? <a href="IniSes.html" class="register-login-link">Inicia sesión aquí</a>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
