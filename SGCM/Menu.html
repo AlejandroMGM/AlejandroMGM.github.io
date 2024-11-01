@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="Menu.css"> <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Menu.css">
     <link rel="stylesheet" href="BarraL.css">
 </head>
 <body>
 
+    <!-- Barra lateral -->
     <div class="sidebar">
         <div class="profile">
             <img src="perfil.jpg" alt="Foto de Perfil">
@@ -24,10 +26,188 @@
             <li><a href="Registro.html"><i class="fas fa-user-plus"></i> Registro</a></li>
         </ul>
     </div>
+    
+    <!-- Contenedor principal -->
+    <div class="main-container">
+        <!-- Card principal -->
+        <div class="card card-full-height">
+            <div class="card-body p-0">
+                <img src="https://img.freepik.com/vector-premium/lindo-medico-masculino-ilustracion-dibujado-mano-arte-dibujos-animados-vector-alta-calidad-diseno-tematico-medico_625233-1426.jpg?semt=ais_hybrid" class="card-image-full">
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#modalPrincipal">Más información</button>
+                <button class="btn btn-secondary"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
 
-    <div class="main-content">
-        <!-- Contenido principal aquí -->
+        <!-- Contenedor de las dos cards pequeñas -->
+        <div class="side-cards">
+            <div class="card card-small">
+                <div class="card-body">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2622/2622384.png" class="card-icon">
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalServicio1">Más info</button>
+                    <a href="Calendario.html" class="btn btn-secondary btn-sm">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card card-small">
+                <div class="card-body">
+                    <img src="https://img.freepik.com/vector-premium/consulta-paciente-ilustracion-medico_677179-56.jpg" class="card-icon">
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalServicio2">Más info</button>
+                    <a href="Cita.html" class="btn btn-secondary btn-sm">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Nuevo contenedor para las cards 3 y 4 -->
+        <div class="side-cards">
+            <div class="card card-small">
+                <div class="card-body">
+                    <img src="https://media.istockphoto.com/id/1139778389/es/vector/concepto-de-expediente-m%C3%A9dico-ilustraci%C3%B3n-vectorial-diagn%C3%B3stico-m%C3%A9dico-historia-cl%C3%ADnica.jpg?s=612x612&w=0&k=20&c=pTbMmGwS4zJNnP80m8YWMvmbmjSL5sPmgltaH7NtinU=" class="card-icon" alt="Expediente médico">
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalServicio3">Más info</button>
+                    <a href="Formulario.html" class="btn btn-secondary btn-sm">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card card-small">
+                <div class="card-body">
+                    <img src="https://img.freepik.com/vector-premium/aplicacion-seguimiento-salud-o-estado-fisico-dibujos-animados-planos-telefono-movil_101884-742.jpg" class="card-icon" alt="Consulta médica 2">
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalServicio4">Más info</button>
+                    <a href="HistorialClinico.html" class="btn btn-secondary btn-sm">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <!-- Modales -->
+    <!-- Modal principal -->
+    <div class="modal fade" id="modalPrincipal" tabindex="-1" role="dialog" aria-labelledby="modalPrincipalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPrincipalLabel">Quienes Somos?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ¡¡Bienvenido al sistema de citas médicas! Si deseas conocer más sobre nuestros doctores y el consultorio, 
+                    simplemente haz clic en la flechita. ¡Estamos aquí para ayudarte!
+                    <br>
+                    <ul>
+                        <li><strong>Calendario:</strong> Selecciona fecha y hora para tu cita.</li>
+                        <li><strong>Cita:</strong> Ingresa la información necesaria antes de tu visita.</li>
+                        <li><strong>Formulario</strong> Crea tu formulario medico.</li>
+                        <li><strong>Historial Clínico:</strong> Revisa tus diagnósticos y tratamientos anteriores.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modales para los servicios -->
+    <div class="modal fade" id="modalServicio1" tabindex="-1" role="dialog" aria-labelledby="modalServicio1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalServicio1Label">Calendario</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    El calendario te permite seleccionar el día y la hora para tu cita. Elige la fecha que prefieras y añade la hora. 
+                    Luego, se seleccionará automáticamente al médico disponible en ese horario y en el consultorio correspondiente. 
+                    Después, dirígete a la sección de citas para completar el proceso.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalServicio2" tabindex="-1" role="dialog" aria-labelledby="modalServicio2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalServicio2Label">Cita</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    La sección de citas te permite visualizar la información de tu cita y te permite ingresar tu formulario. 
+                    Si decides editar, se eliminará el formulario anterior para que puedas cargar uno nuevo. También podrás 
+                    ver el estado de tu cita, indicado en verde si ya se realizó o en rojo si aún no se ha llevado a cabo.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalServicio3" tabindex="-1" role="dialog" aria-labelledby="modalServicio3Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalServicio3Label">Formulario</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    El formulario te permite llenar información general sobre ti, detalles médicos y datos de contacto. Al finalizar, 
+                    podrás descargar el formulario completo y serás dirigido automáticamente al calendario para agendar tu cita.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalServicio4" tabindex="-1" role="dialog" aria-labelledby="modalServicio4Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalServicio4Label">Historial Clinico</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    El historial clínico muestra información general del paciente, incluyendo el 
+                    nombre del doctor que lo atendió y el motivo de la cita. También se detallará 
+                    el tratamiento a seguir, así como la temperatura y la frecuencia cardíaca del paciente.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
