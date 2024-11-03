@@ -44,7 +44,7 @@ body {
 }
 
 .calendar th, .calendar td {
-    padding: 32px; /* Ajusta el padding para los cuadros */
+    padding: 29px; /* Ajusta el padding para los cuadros */
     border: 1px solid #c0d6e4; /* Color de borde azul suave */
     width: 50px; /* Mantiene un ancho fijo */
     height: 50px; /* Mantiene una altura fija */
