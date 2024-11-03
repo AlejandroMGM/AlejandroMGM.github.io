@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="BarraL.css">
     <link rel="stylesheet" href="Calendario.css"> 
+    <script src="Calendario.js"></script> 
 </head>
 <body>
     <!-- Barra lateral -->
@@ -47,45 +48,126 @@
                     <tr>
                         <td class="calendar-day-np"></td>
                         <td class="calendar-day-np"></td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td class="not-work">5</td>
+                        <td class="calendar-day"><span>1</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>2</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>3</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>4</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day not-work"><span>5</span></td>
                     </tr>
                     <tr>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                        <td>11</td>
-                        <td class="not-work">12</td>
+                        <td class="calendar-day"><span>6</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>7</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>8</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>9</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>10</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>11</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day not-work"><span>12</span></td>
                     </tr>
                     <tr>
-                        <td>13</td>
-                        <td>14</td>
-                        <td>15</td>
-                        <td>16</td>
-                        <td>17</td>
-                        <td>18</td>
-                        <td class="not-work">19</td>
+                        <td class="calendar-day"><span>13</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>14</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>15</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>16</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>17</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>18</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day not-work"><span>19</span></td>
                     </tr>
                     <tr>
-                        <td>20</td>
-                        <td>21</td>
-                        <td>22</td>
-                        <td>23</td>
-                        <td>24</td>
-                        <td>25</td>
-                        <td class="not-work">26</td>
+                        <td class="calendar-day"><span>20</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>21</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>22</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>23</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>24</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>25</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day not-work"><span>26</span></td>
                     </tr>
                     <tr>
-                        <td>27</td>
-                        <td>28</td>
-                        <td>29</td>
-                        <td>30</td>
-                        <td>31</td>
+                        <td class="calendar-day"><span>27</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>28</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>29</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>30</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
+                        <td class="calendar-day"><span>31</span>
+                            <button class="schedule-btn" onclick="scheduleAppointment(this)">+</button>
+                            <button class="cancel-btn" onclick="cancelAppointment(this)" style="display: none;">x</button>
+                        </td>
                         <td class="calendar-day-np"></td>
                         <td class="calendar-day-np"></td>
                     </tr>

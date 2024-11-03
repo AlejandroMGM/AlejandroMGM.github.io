@@ -1,8 +1,10 @@
-/* Ajustes generales para el contenedor del calendario */
+/* Ajustes generales */
 body {
     display: flex;
     margin: 0;
     font-family: Arial, sans-serif;
+    overflow: hidden; /* Evita el desplazamiento */
+    height: 100vh;
 }
 
 /* Contenido principal 3/5 desde el lado izquierdo */
@@ -20,12 +22,15 @@ body {
     flex-basis: 40%; /* Ocupa 2/5 del ancho total */
 }
 
-/* Contenedor del calendario con fondo gris transparente */
+/* Contenedor del calendario reducido */
 .calendar-container {
-    background-color: rgba(128, 128, 128, 0.6); /* Fondo gris translúcido */
-    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.6);
+    padding: 10px; /* Reduce el relleno interno */
     border-radius: 10px;
-    width: 90%;
+    width: 80%; /* Ajusta el ancho para hacerlo más pequeño */
+    max-width: 400px; /* Limita el tamaño máximo */
+    height: auto; /* Permite que ajuste su altura según el contenido */
+    margin: 0 auto; /* Centra el calendario dentro de su contenedor */
 }
 
 /* Estilos específicos para la tabla del calendario */
@@ -39,8 +44,10 @@ body {
 }
 
 .calendar th, .calendar td {
-    padding: 45px;
+    padding: 36px; /* Ajusta el padding para los cuadros */
     border: 1px solid #c0d6e4; /* Color de borde azul suave */
+    width: 50px; /* Mantiene un ancho fijo */
+    height: 50px; /* Mantiene una altura fija */
 }
 
 .calendar th {
@@ -118,4 +125,27 @@ body {
 
 #cita {
     margin-top: auto; /* Coloca el botón en la parte inferior */
+}
+
+/* Estilos para botones de prueba */
+.schedule-btn, .cancel-btn {
+    background-color: #4a8dad;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 1rem;
+    position: relative;
+}
+
+/* Colores para la celda con cita */
+.calendar .scheduled {
+    background-color: #ffa500; /* Naranja */
+    color: #ffffff;
+}
+
+.calendar-day-np {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    cursor: default; /* Cursor por defecto para indicar que no es clickeable */
 }
